@@ -122,4 +122,51 @@ p[data="data-2"] { background-color: blue;}
     background-color: lightcoral;
 }
 
+/* ---- 동위 선택자 ---- */
+
+/* : 바로 뒤 형제 요소 하나 */
+#div1 + div {
+    background-color: yellowgreen;
+}
+
+/* ~ : 뒤에 존재하는 형제 요소 중 일치하는 모든 형제 요소 */
+#div3 ~ div {
+    background-color: springgreen;
+}
+
+
+/* ---- 체크박스 만들기 ---- */
+
+/* 1. label 요소를 체크박스 모양으로 만들기 */
+#check + label {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+
+    /* 크기지정 O, 한 줄에 배치(수평 분할) */
+    display: inline-block;
+
+    cursor: pointer; /* 마우스 포인터 모양을 손가락으로 변경 */
+
+    border-radius: 20%;
+
+    /* 사용자가 선택(블럭)을 못하게 함 */
+    user-select: none;
+}
+
+/* 2. 체크박스가 체크 되었을 때 label에 체크박스 이미지 표시 */
+/* 체크된체크박스 라벨 */
+#check:checked + label{
+    background-image: url('../images/checkbox.png');
+    background-size: cover; /* 이미지 크기를 요소에 맞춰라 */
+}
+
+/* 3. 체크박스를 존재는 하지만 보이지 않게 처리 */
+#check{
+    display: none;/* 표시하지 않겠다 */
+}
+
+
+
+
 
