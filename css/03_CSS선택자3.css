@@ -25,3 +25,4 @@ div[name ~= "aaa"]{
   div[name *= "2"]{
     border: 2px solid magenta;
   }
+  
