@@ -1,0 +1,43 @@
+div {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.test{
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+}
+
+
+/* float 지정 시 block의 성질 해제 (한 줄 차지X) */
+
+.float-left {
+    width: 50px;
+    height: 50px;
+    float: left; /* 띄워서 왼쪽 */
+    background-color: pink;
+}
+
+
+/* float : left 상태 해제 */
+.clear-left {
+    clear: left;
+}
+
+
+.float-right{
+    width: 30px;height: 30px;
+    background-color: yellow;
+    float: right;
+}
+
+.clear-right{
+    clear: right;
+}
+
+
+
+
+
+
