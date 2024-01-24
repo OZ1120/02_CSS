@@ -1,0 +1,26 @@
+/* ----- 전체 설정 ----- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  color: black;
+  text-decoration: none /* 밑줄제거 */
+}
+
+ul{
+  list-style: none; /* 목록의 스타일(앞에 붙는 점)  제거 */
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  /* min-width/height :
+    화면(기기, 브라우저) 크기가 작아져도 유지해야 할 최소 크기
+  */
+  min-width: 768px;
+  min-height: 100vh; /* 화면 높이 100% */
+}
