@@ -1,9 +1,20 @@
 /* ----- 전체 설정 ----- */
 
+/* :root 전역 요소 지정을 위한 가상 선택자 
+  - 페이지 내부에서 공통으로 사용할 값을 변수로 선언
+
+  *변수 : 값을 저장하는 것
+*/
+:root{
+  --main-color : grey;
+  /* --main-font-size : 20px */
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid black; /*완성시 삭제예정 */
 }
 
 a{
@@ -23,4 +34,14 @@ body{
   */
   min-width: 768px;
   min-height: 100vh; /* 화면 높이 100% */
+}
+
+/* 웹폰트 추가 */
+/* -> 폰트를 적용하고 싶은 곳에서
+ font-family:'GoryeongStrawberry' 작성 */
+@font-face {
+  font-family: 'GoryeongStrawberry';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/GoryeongStrawberry.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
